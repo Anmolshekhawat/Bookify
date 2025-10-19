@@ -53,6 +53,8 @@ public class IssuedBook {
 
     // Getters and Setters
     public Integer getIssueId() { return issueId; }
+
+
     public void setIssueId(Integer issueId) { this.issueId = issueId; }
 
     public String getStudentId() { return studentId; }
