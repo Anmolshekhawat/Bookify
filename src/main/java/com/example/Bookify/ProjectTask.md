@@ -1,0 +1,65 @@
+# Bookify – Smart Library Management System
+
+Bookify is a project aimed at transforming manual library operations into a **fully digital, efficient, and user-friendly system**.
+
+---
+
+## 🚀 Vision and Objectives
+
+The primary goal of Bookify is to **modernize the library experience** for both librarians and students by automating daily tasks and improving communication.
+
+### Core Objectives:
+* **Go Digital:** Replace manual library operations with a fully digital system.
+* **Easy Management:** Allow books to be easily issued, returned, and tracked online.
+* **Save Time & Reduce Errors:** Automate daily library tasks to save time and reduce human errors.
+* **Smart Communication:** Keep students automatically informed through email notifications about book issue date, due (submission) date, fines or reminders.
+* **Smart Features:** Implement advanced features like QR-based fine payment and reminder alerts.
+
+---
+
+## 🎯 Phase 1: Core Library Operations
+
+**Objective:** Design and implement the core functionalities of the Bookify system, including **book management, book assignment, automated notifications, penalty handling, and digital fine payment integration**.
+
+### Functional Modules & Task Breakdown
+
+### 1. Book Database Management
+
+| S.NO | Task Description | Status | Updated Status |
+| :--- | :--- | :--- | :--- |
+| **1** | Store Details of Book such as Book Id, Title, Category, Author, Total Quantity, Assigned Quantity. | Created | In Progress |
+| **2** | Enable the Admin to add, update, delete, and view books easily. | Pending | Not Started |
+
+### 2. Book Assignment by Admin
+
+| S.NO | Task Description | Status | Updated Status |
+| :--- | :--- | :--- | :--- |
+| **1** | Admin can Assign the book to a specific student from the admin panel. | Pending | Not Started |
+| **2** | During assignment, the system records Student ID, Book ID, Issue Date, Submission Date, Returned Date. | Pending | Not Started |
+| **3** | Once assigned, the book’s status is updated to **Issued**, and the transaction is saved in the database. | Pending | Not Started |
+
+### 3. Automated Notification System
+
+The system will automatically send email notifications to students.
+
+| S.NO | Task Description | Status | Updated Status |
+| :--- | :--- | :--- | :--- |
+| **1** | **On Book Issue Day** – confirms book assignment with due date details. | Pending | Not Started |
+| **2** | **Three Days Before Due Date** – reminds students to return/renew the book. | Pending | Not Started |
+| **3** | **On Submission Day** – alerts students that the book is due today. | Pending | Not Started |
+
+### 4. Overdue and Penalty Notification
+
+If a book is not returned on time, the system will manage the penalty.
+
+| S.NO | Task Description | Status | Updated Status |
+| :--- | :--- | :--- | :--- |
+| **401** | Calculates the penalty (fine) based on overdue days. | Pending | Not Started |
+| **402** | Sends repeated email notifications informing the student about their pending fine. | Pending | Not Started |
+| **403** | Keeps sending reminders until the fine is cleared or the book is returned. | Pending | Not Started |
+
+### 5. Digital Fine Payment
+
+Students will be able to pay their fines digitally.
+
+| S.NO | Task Description | Status
