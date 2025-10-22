@@ -50,7 +50,7 @@ The system will automatically send email notifications to students.
 
 ### 4. Overdue and Penalty Notification
 
-If a book is not returned on time, the system will manage the penalty.
+If a  book is not returned on time, the system will manage the penalty.
 
 | S.NO | Task Description | Status | Updated Status |
 | :--- | :--- | :--- | :--- |
