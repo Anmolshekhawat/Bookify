@@ -25,29 +25,30 @@ The primary goal of Bookify is to **modernize the library experience** for both 
 
 ### 1. Book Database Management
 
-| S.NO | Task Description | Status | Updated Status |
-| :--- | :--- | :--- | :--- |
-| **1** | Store Details of Book such as Book Id, Title, Category, Author, Total Quantity, Assigned Quantity. | Created | In Progress |
-| **2** | Enable the Admin to add, update, delete, and view books easily. | Pending | Not Started |
+| S.NO | Task Description | Status  | Updated Status                       |
+| :--- | :--- |:--------|:-------------------------------------|
+| **1** | Store Details of Book such as Book Id, Title, Category, Author, Total Quantity, Assigned Quantity. | Created | Successful                           |
+| **2** | Enable the Admin to add, update, delete, and view books easily. | Created | Successful |
 
 ### 2. Book Assignment by Admin
 
-| S.NO | Task Description | Status | Updated Status |
-| :--- | :--- | :--- | :--- |
-| **1** | Admin can Assign the book to a specific student from the admin panel. | Pending | Not Started |
-| **2** | During assignment, the system records Student ID, Book ID, Issue Date, Submission Date, Returned Date. | Pending | Not Started |
-| **3** | Once assigned, the book’s status is updated to **Issued**, and the transaction is saved in the database. | Pending | Not Started |
+| S.NO | Task Description | Status  | Updated Status |
+| :--- | :--- |:--------|:---------------|
+| **1** | Admin can Assign the book to a specific student from the admin panel. | created | Successful     |
+| **2** | During assignment, the system records Student ID, Book ID, Issue Date, Submission Date, Returned Date. | created | Successful     |
+| **3** | Once assigned, the book’s status is updated to **Issued**, and the transaction is saved in the database. | created | Successful     |
+| **4** | Handle Parellel Book Issue Request                                          | created | In Progress    |
 
 ### 3. Automated Notification System
 
 The system will automatically send email notifications to students.
 
-| S.NO | Task Description | Status | Updated Status |
-| :--- | :--- | :--- | :--- |
-| **1** | **On Book Issue Day** – confirms book assignment with due date details. | Pending | Not Started |
-| **2** | **Three Days Before Due Date** – reminds students to return/renew the book. | Pending | Not Started |
-| **3** | **On Submission Day** – alerts students that the book is due today. | Pending | Not Started |
-
+| S.NO  | Task Description                                                            | Status  | Updated Status |
+|:------|:----------------------------------------------------------------------------|:--------|:---------------|
+| **1** | **On Book Issue Day** – confirms book assignment with due date details.     | Pending | Not Started    |
+| **2** | **Three Days Before Due Date** – reminds students to return/renew the book. | Pending | Not Started    |
+| **3** | **On Submission Day** – alerts students that the book is due today.         | Pending | Not Started    |
+             |
 ### 4. Overdue and Penalty Notification
 
 If a  book is not returned on time, the system will manage the penalty.
