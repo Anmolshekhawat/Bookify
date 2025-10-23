@@ -25,18 +25,18 @@ The primary goal of Bookify is to **modernize the library experience** for both 
 
 ### 1. Book Database Management
 
-| S.NO | Task Description | Status | Updated Status |
-| :--- | :--- | :--- | :--- |
-| **1** | Store Details of Book such as Book Id, Title, Category, Author, Total Quantity, Assigned Quantity. | Created | In Progress |
-| **2** | Enable the Admin to add, update, delete, and view books easily. | Pending | Not Started |
+| S.NO | Task Description | Status  | Updated Status                       |
+| :--- | :--- |:--------|:-------------------------------------|
+| **1** | Store Details of Book such as Book Id, Title, Category, Author, Total Quantity, Assigned Quantity. | Created | Successful                           |
+| **2** | Enable the Admin to add, update, delete, and view books easily. | Created | Successful |
 
 ### 2. Book Assignment by Admin
 
-| S.NO | Task Description | Status | Updated Status |
-| :--- | :--- | :--- | :--- |
-| **1** | Admin can Assign the book to a specific student from the admin panel. | Pending | Not Started |
-| **2** | During assignment, the system records Student ID, Book ID, Issue Date, Submission Date, Returned Date. | Pending | Not Started |
-| **3** | Once assigned, the book’s status is updated to **Issued**, and the transaction is saved in the database. | Pending | Not Started |
+| S.NO | Task Description | Status  | Updated Status |
+| :--- | :--- |:--------|:---------------|
+| **1** | Admin can Assign the book to a specific student from the admin panel. | created | Successful     |
+| **2** | During assignment, the system records Student ID, Book ID, Issue Date, Submission Date, Returned Date. | created | Successful     |
+| **3** | Once assigned, the book’s status is updated to **Issued**, and the transaction is saved in the database. | created | Successful     |
 
 ### 3. Automated Notification System
 
