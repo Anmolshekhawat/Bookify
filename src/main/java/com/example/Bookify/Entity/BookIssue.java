@@ -18,10 +18,10 @@ public class BookIssue {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int issueId;
 
-    @Column(name = "book_id", nullable = false, unique = true)
+    @Column(name = "book_id", nullable = false)
     private String bookId;
 
-    @Column(name = "student_id", nullable = false, unique = true)
+    @Column(name = "student_id", nullable = false)
     private String studentId;
 
     @Column(name = "issue_date", nullable = false)
@@ -42,7 +42,7 @@ public class BookIssue {
 
     public BookIssue(int id ,String bookId, String studentId, LocalDate issueDate, LocalDate dueDate, LocalDate returnedDate, String status) {
        this.issueId = id;
-        bookId = bookId;
+       this.bookId = bookId;
         this.studentId = studentId;
         this.issueDate = issueDate;
         this.dueDate = dueDate;

@@ -1,17 +1,16 @@
 package com.example.Bookify.Entity;
 import jakarta.persistence.*;
 
+import java.util.UUID;
+
 @Entity
 @Table(name = "students")
 public class Student {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
     @Column(nullable = false)
     private String name;
 
+    @Id
     @Column(name = "lib_card", nullable = false, unique = true)
     private String libCard;
 
@@ -21,24 +20,38 @@ public class Student {
     @Column(nullable = false)
     private String branch;
 
+    public String getRollNo() {
+        return rollNo;
+    }
 
-    public Student() {}
+    public void setRollNo(String rollNo) {
+        this.rollNo = rollNo;
+    }
 
-    public Student(String name, String libCard, String emailId, String branch) {
+    @Column(name = "roll_no",  nullable = false, unique = true )
+    private  String rollNo;
+
+    @PrePersist
+    public void generateLibCard() {
+        if (this.libCard == null) {
+            this.libCard = "LIB" + UUID.randomUUID().toString().substring(0, 6).toUpperCase();
+
+        }
+    }
+    public Student() {
+    }
+
+
+    public Student(String name, String libCard, String emailId, String branch, String rollNo) {
         this.name = name;
         this.libCard = libCard;
         this.emailId = emailId;
         this.branch = branch;
+        this.rollNo = rollNo;
     }
 
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
