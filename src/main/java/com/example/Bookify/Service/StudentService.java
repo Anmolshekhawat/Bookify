@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -47,6 +48,8 @@ public class StudentService {
 
     public void addNStudents(int n) {
 
+         List<Student> list = new ArrayList<>();
+
         for(int i = 1; i<=n; i++)
         {
             Student student  = new Student();
@@ -54,8 +57,9 @@ public class StudentService {
             student.setBranch("cse ");
             student.setEmailId("Ravi" + i +" @gmail.com");
             student.setRollNo("22ESGCS" + i);
-            studentRepository.save(student);
+           list.add(student);
         }
+        studentRepository.saveAll(list);
     }
 
     public List<Student> getAllStudent() {
