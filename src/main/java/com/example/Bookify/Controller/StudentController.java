@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/student/")
 public class StudentController {
@@ -48,9 +50,18 @@ public class StudentController {
             return  ResponseEntity.notFound().build();
         }
     }
+    @PostMapping("{n}")
+    public String addNStudents( @PathVariable int n)
+    {
+        studentService.addNStudents(n);
+        return "Saved Successfully";
+    }
 
-
-
+    @GetMapping()
+    public List<Student> getAllStudent()
+     {
+         return studentService.getAllStudent();
+     }
 
 
 

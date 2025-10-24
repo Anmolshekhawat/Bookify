@@ -37,7 +37,7 @@ The primary goal of Bookify is to **modernize the library experience** for both 
 | **1** | Admin can Assign the book to a specific student from the admin panel. | created | Successful     |
 | **2** | During assignment, the system records Student ID, Book ID, Issue Date, Submission Date, Returned Date. | created | Successful     |
 | **3** | Once assigned, the book’s status is updated to **Issued**, and the transaction is saved in the database. | created | Successful     |
-| **4** | Handle Parellel Book Issue Request                                          | created | In Progress    |
+| **4** | Handle Parellel Book Issue Request                                          | created | Successful     |
 
 ### 3. Automated Notification System
 
